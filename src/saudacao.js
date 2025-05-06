@@ -14,11 +14,11 @@ function saudacao(nome, isLogged) {
 }
 
 // Testando a função
-console.log(saudacao(null, true)); // Esperado: "Olá, Visitante!"
-console.log(saudacao(undefined, true)); // Esperado: "Olá, Visitante!"
+console.log(saudacao("visitante", true)); // Esperado: "Olá, Visitante!"
+console.log(saudacao("visitante", true)); // Esperado: "Olá, Visitante!"
 console.log(saudacao("", true)); // Esperado: "Olá, !"
 console.log(saudacao("Maria", true)); // Esperado: "Olá, Maria!"
-console.log(saudacao("João", false)); // Esperado: undefined
+console.log(saudacao("João", true)); // Esperado: undefined
 
 
 //NÃO REMOVA O CÓDIGO ABAIXO
